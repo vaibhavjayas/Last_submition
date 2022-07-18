@@ -175,6 +175,9 @@ def user_stats(df, city):
     # Display counts of user types
     user_counts = df['User Type'].value_counts()
     print("Distribution for user types:",user_counts)
+    
+    # Added logic to check if gender is not present in dataset 
+
     if 'Gender' not in df:
         print("No gender data available")
     else:
