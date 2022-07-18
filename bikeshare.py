@@ -6,8 +6,11 @@ import datetime as dt
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
+# Declaring the months of the year
 
 months = ('january', 'february', 'march', 'april', 'may', 'june')
+
+# Declaring the days of the week
 
 weekdays = ('sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday',
             'saturday')
