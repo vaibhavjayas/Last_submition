@@ -168,7 +168,7 @@ def trip_duration_stats(df):
 
 def user_stats(df, city):
     """Display statistics on bikeshare users."""
-
+    """Added checks for no gender in dataset"""
     print('\nCalculating User Stats...\n')
     start_time = time.time()
     
@@ -208,6 +208,8 @@ def data_display(df):
             counter += 5
             prompt = input("\nDo you want to display more y or n \n").lower()
             if prompt == 'y':
+                if (counter> len(df.index):
+                        print("No more data to display")
                 continue
             else:
                 break
