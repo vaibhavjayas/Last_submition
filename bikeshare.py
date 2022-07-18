@@ -202,6 +202,8 @@ def data_display(df):
             counter += 5
             prompt = input("\nDo you want to display more y or n \n").lower()
             if prompt == 'y':
+                if (counter> len(df.index):
+                        print("No more data to display")
                 continue
             else:
                 break
